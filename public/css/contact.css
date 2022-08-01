@@ -1,0 +1,104 @@
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    overflow: hidden;
+}
+.bg {
+  position: absolute;
+}
+
+.box {
+  width: 562px;
+  height: 486px;
+  background: rgba(255, 254, 254, 0.1);
+  backdrop-filter: blur(35px);
+  border-radius: 41px;
+  border: 2px solid #FFD500;
+  margin-top: 50px;
+}
+.box form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 42px;
+    height: 80%;
+    align-items: center;
+    justify-content: space-around;
+}
+.box form input,
+.box form textarea {
+  height: 50px;
+  width: 470px;
+  border-radius: 31px;
+  background: rgba(229, 236, 238, 0.5);
+box-shadow: 6px 6px 10px rgba(104, 1, 210, 0.3);
+border-radius: 31px;
+font-family: 'Raleway';
+font-style: italic;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+letter-spacing: 0.07em;
+color: rgba(0, 0, 0);
+padding-left: 20px;
+border: none;
+outline: none;
+margin-top: 27px;
+}
+.box form input::placeholder{
+opacity: 0.5;
+}
+
+.box form textarea{
+  height: 202px;
+width: 477px;
+border-radius: 31px;
+resize: none;
+padding: 20px;
+}
+.box button {
+  width: 154.5px;
+height: 43.07px;
+outline: none;
+border: 2px solid #D73D5B;
+border-radius: 78px;
+background: none;
+margin-top: 22px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.07em;
+color: #D73D5B;
+}
+
+@keyframes correct {
+  from {top: -50px;}
+  to {top: 10px;}
+}
+
+.alert-success {
+  position: absolute;
+  left: 35%;
+  top: 10px;
+  background: #6BCB77;
+  color: white;
+  border-radius: 10px;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  animation: correct 0.5s cubic-bezier(.9,1.4,.84,.61);
+}

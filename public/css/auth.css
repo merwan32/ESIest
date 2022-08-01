@@ -1,0 +1,191 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #EFFFFD;
+    font-family: 'Roboto Slab', serif;
+}
+.container {
+    width: 80%;
+    height: 85%;
+    background: white;
+    margin: 3.75% 10%;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px #B8FFF9;
+    position: relative;
+    overflow: hidden;
+}
+.container .logo {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 140px;
+}
+.container .form {
+    width: 400px;
+    margin-left: 50px;
+    padding-top: 70px;
+    height: 400px;
+}
+.container .form.login {
+    padding-top: 150px;
+}
+a {
+    color: #42C2FF;
+}
+p{
+    color: #B7C8D6;
+}
+h1 {
+    margin: 5px 0;
+}
+.container .form .log {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .form .log  input,
+select{
+   height: 38px;
+   outline: none;
+   padding-left: 8px;
+   border-radius: 10px;
+}
+.container .form .log .inpt {
+    width: 100%;
+    padding-left: 38px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.inpt input {
+    width: 87%;
+}
+.container .form .log .inpt i {
+    position: absolute;
+    right: 50px;
+    top: 13px;
+}
+.container .form .log .np input{
+    margin-right: 0;
+    width: 45%;
+}
+select {
+    width: 49%;
+    margin-right: 0;
+    background: #EFFFFD;
+    border: 2px solid #EFFFFD;
+}
+.container .form .log .np ,
+.ag{
+    width: 90%;
+    margin-bottom: 10px;
+}
+.container .form .log .np > div {
+    position: relative;
+    display: inline;
+}
+.container .form .log .np input+i{
+    position: absolute;
+    right: 10px;
+    top: 3px;
+}
+
+.container .form .log .np div:first-child input {
+    margin-right: 2px;
+}
+.container .form .log .np div:first-child input+i{
+    right: 15px;
+}
+
+
+.bg {
+    position: absolute;
+    width: 800px;
+    right: -100px;
+}
+button {
+    width: 130px;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    margin-left: 30%;
+    background: #42C2FF;
+    color: white;
+    font-size: 20px;
+    margin-top: 0px;
+    transition: 0.5s background;
+}
+button.mp{
+    width: 300px;
+}
+.login button {
+    margin-left: 0%;
+    margin-top: 30px;
+}
+button:hover{
+    background: white;
+    color:#42C2FF ;
+    border: 2px solid #42C2FF;
+    cursor: pointer;
+}
+
+
+
+input:focus {
+    border: #42C2FF 2px solid;
+    background: white;
+}
+input:not(:focus) {
+    border: 2px solid #EFFFFD;
+    background: #EFFFFD;
+}
+input:focus + i {
+    color: #42C2FF;
+}
+input:not(:focus) + i {
+    color: #B7C8D6;
+}
+
+@keyframes error {
+    from {right: -300px;}
+    to {right: 50px;}
+  }
+
+.invalid-feedback {
+    width: 300px;
+    height: 40px;
+    background: white;
+    border: 2px solid #890F0D;
+    border-radius: 5px;
+    padding: 5px;
+    color: #890F0D;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    animation: error 0.5s cubic-bezier(.9,1.4,.84,.61);
+}
+
+input[type = "password"] +i{
+    cursor: pointer;
+}
+a.fp {
+    margin-left: 180px;
+}
+
+@keyframes correct {
+    from {top: -50px;}
+    to {top: 10px;}
+  }
+.alert-success {
+    position: absolute;
+    left: 35%;
+    top: 10px;
+    background: #6BCB77;
+    color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    animation: correct 0.5s cubic-bezier(.9,1.4,.84,.61);
+}

@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#main{
+    position: absolute;
+width: 33vw;
+height: 68vh;
+left:33.5vw;
+top: 16vh;
+
+background: rgba(255, 254, 254, 0.1);
+backdrop-filter: blur(35px);
+border: 1px solid yellow;
+border-radius: 41px;
+}
+#title{
+ 
+    position:grid;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:9.3vh;
+    width: 80%;
+    height: 110px;
+    
+    
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.07em;
+    
+    /* gradient */
+    background: linear-gradient(90deg, #6801D2 0%, #D73D5B 49.75%, #F77F00 95.52%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+    
+    }
+    h3{
+        margin-top:30px;
+       font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        
+       
+        text-align: center;
+        letter-spacing: 0.07em;
+        
+        color: #000000;
+        
+        
+        }
+#email{
+width:381.42px;
+height:55.31px;
+margin-left:40px;
+background: rgba(229, 236, 238, 0.5);
+box-shadow: 6px 6px 10px rgba(104, 1, 210, 0.3);
+border-radius: 31px;
+border:rgba(229, 236, 238, 0.5);;
+}
+input{
+    text-indent:20px;
+
+}
+::placeholder{
+  
+position: absolute;
+width: 278px;
+height: 33px;
+padding:10px;
+font-family: 'Raleway';
+font-style: italic;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+letter-spacing: 0.07em;
+
+color: #000000;
+
+opacity: 0.5;
+
+}
+button{
+
+    position:absolute;
+left:150px;
+top:380px;
+
+
+width: 207.64px;
+height: 45.54px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+
+text-align: center;
+letter-spacing: 0.07em;
+border: 2px solid #6801D2;
+
+background: linear-gradient(90deg, #6801D2 0%, #D73D5B 49.75%, #F77F00 95.52%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+border-radius: 78px;
+
+}
+        
